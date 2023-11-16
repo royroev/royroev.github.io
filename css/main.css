@@ -227,6 +227,7 @@ textarea {
    * or use the `javascript:` pseudo protocol
    */
   a[href^="#"]::after,
+  a[href]::after,
   a[href^="javascript:"]::after {
     content: "";
   }
@@ -264,6 +265,9 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+  .header-mobile {
+    display: none;
   }
 }
 
