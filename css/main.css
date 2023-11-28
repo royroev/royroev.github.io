@@ -205,7 +205,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-h4 {
+h4, h5 {
   margin: 0;
   padding: 0;
 }
@@ -213,6 +213,10 @@ h4 {
 .wrapper {
   max-width: 1024px;
   margin: auto;
+}
+
+.content {
+  padding-bottom: 60px;
 }
 
 .header {
@@ -356,8 +360,46 @@ h4 {
   margin: 10px 0;
 }
 
+.result-items li {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
 .header-mobile {
   display: none;
+}
+
+.music-platforms {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.music-platforms img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.music-platforms a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.music-platforms a:hover {
+  color: #b64040;
+}
+
+.music-platforms li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (max-width: 768px) {
