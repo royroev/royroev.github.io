@@ -21,6 +21,21 @@
 
   <meta name="theme-color" content="#fafafa">
 
+  <script>
+    function calculatePeriod(startDateStr) {
+      const startDate = new Date(startDateStr);
+      const now = new Date();
+      let years = now.getFullYear() - startDate.getFullYear();
+      let months = now.getMonth() - startDate.getMonth();
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+      return `${startDate.toLocaleString('default', { month: 'short', year: 'numeric' })} - Present (${years}yr ${months}mos)`;
+    }
+    document.getElementById('yoffix-period').textContent = calculatePeriod('2022-10-01');
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1X5K1WYCCL"></script>
   <script>
@@ -116,7 +131,7 @@
             <h4 class="job-details-position">
               Full-stack tech lead
             </h4>
-            <span class="job-details-period">Oct 2022 - Present (1yr 7mos)</span>
+            <span class="job-details-period">Oct 2022 - <span class="job-details-period" id="yoffix-period"/></span>
           </div>
           <h4>Responsibilities:</h4>
           <ul class="result-items">
