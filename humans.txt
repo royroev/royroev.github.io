@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Rostislav Goriainov -- CTO and Engineering Leader -- https://royroev.github.io/
 
 # THANKS
 
-    <name>
+    HTML5 Boilerplate community
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Modernizr, Normalize.css, Parcel

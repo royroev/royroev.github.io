@@ -1,12 +1,13 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Rostislav",
+  "name": "Rostislav Goriainov Portfolio",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f0e8",
+  "theme_color": "#101820"
 }
