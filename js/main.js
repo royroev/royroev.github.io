@@ -2,6 +2,10 @@ function prefersReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
+function hasHoverPointer() {
+  return window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+}
+
 function enableReveal() {
   var elements = document.querySelectorAll('.reveal');
 
@@ -40,7 +44,7 @@ function enableReveal() {
 }
 
 function enablePointerField() {
-  if (prefersReducedMotion()) {
+  if (prefersReducedMotion() || !hasHoverPointer()) {
     return;
   }
 
@@ -53,7 +57,7 @@ function enablePointerField() {
 }
 
 function enableTiltCards() {
-  if (prefersReducedMotion()) {
+  if (prefersReducedMotion() || !hasHoverPointer()) {
     return;
   }
 
